@@ -22,7 +22,6 @@ export default function Nav() {
               spy={true}
               smooth={true}
               duration={500}
-              //offset={90}
               className="transition-all duration-300"
             >
               {item.name}
