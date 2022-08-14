@@ -7,14 +7,16 @@ const navigation = [
   { name: "proyectos", href: "projects" },
 ];
 
-export default function Nav() {
+export default function Nav({ animated }) {
   return (
     <nav>
       <ul className="flex text-[18px] space-x-8 capitalize">
         {navigation.map((item, i) => (
           <li
             key={i}
-            className="text-textPrimary hover:text-textSecondary font-rubik font-bold tracking-[2px] cursor-pointer"
+            className={`${
+              animated ? "" : "translate-y-10 opacity-0"
+            } transform transition duration-[2000ms] ease-in-out text-textPrimary font-rubik font-bold tracking-[2px] cursor-pointer`}
           >
             <Link
               to={item.href}
@@ -22,7 +24,7 @@ export default function Nav() {
               spy={true}
               smooth={true}
               duration={500}
-              className="transition-all duration-300"
+              className="transition-all duration-300 hover:text-textSecondary"
             >
               {item.name}
             </Link>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
@@ -9,6 +9,12 @@ import { Link } from "react-scroll";
 const navigation = { href: "skills" };
 
 export default function Hero() {
+  const [animated, setAnimated] = useState(false);
+
+  useEffect(() => {
+    setAnimated(true);
+  }, []);
+
   return (
     <main
       id="home"
@@ -16,8 +22,12 @@ export default function Hero() {
     >
       {/* <CircleHero /> */}
       <div className="flex justify-center min-h-screen items-center z-10 flex-col">
-        <div className="max-w-4xl lg:max-w-7xl lg:px-16 text-center">
-          <h1 className="text-textThird text-[22px] md:text-[34px] lg:text-[52px] font-rubik tracking-[2px] mb-6">
+        <div
+          className={`${
+            animated ? "" : "translate-y-10 opacity-0"
+          } transform transition duration-[2000ms] ease-in-out max-w-4xl lg:max-w-7xl lg:px-16 text-center`}
+        >
+          <h1 className="text-textThird text-[40px] md:text-[48px] lg:text-[54px] font-rubik tracking-[2px] mb-6">
             Hola👋, yo soy{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-textPrimary to-blue-500 font-bold">
               Marcelo Domínguez
