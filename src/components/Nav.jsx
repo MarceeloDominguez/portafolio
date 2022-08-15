@@ -1,11 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-
-const navigation = [
-  { name: "inicio", href: "home" },
-  { name: "habilidades", href: "skills" },
-  { name: "proyectos", href: "projects" },
-];
+import { navigation } from "../helpers/iconSkills";
 
 export default function Nav({ animated }) {
   return (

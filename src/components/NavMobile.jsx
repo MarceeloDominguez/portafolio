@@ -3,12 +3,7 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { AiOutlineClose } from "react-icons/ai";
 import { FiMenu } from "react-icons/fi";
-
-const navigation = [
-  { name: "inicio", href: "home" },
-  { name: "habilidades", href: "skills" },
-  { name: "proyectos", href: "projects" },
-];
+import { navigation } from "../helpers/iconSkills";
 
 export default function NavMobile({ animated }) {
   const [isOpen, setIsOpen] = useState(false);

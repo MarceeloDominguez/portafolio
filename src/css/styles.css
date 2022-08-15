@@ -1,0 +1,19 @@
+.custom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom svg {
+  position: relative;
+  display: block;
+  width: calc(139% + 1.3px);
+  height: 285px;
+}
+
+.custom .shape-fill {
+  fill: #45a29e;
+}
