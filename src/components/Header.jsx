@@ -27,7 +27,7 @@ export default function Header() {
         <h1
           className={`${
             animated ? "" : "translate-y-10 opacity-0"
-          } transform transition duration-[2000ms] ease-in-out text-[26px] text-primary font-bold font-rubik flex bg-third items-center space-x-2 p-2 rounded-tl-[15px] rounded-br-[15px]`}
+          } transform transition duration-[2000ms] ease-in-out text-[26px] text-primary font-bold font-mono flex bg-third items-center space-x-2 p-2 rounded-tl-[15px] rounded-br-[15px]`}
         >
           <MdOutgoingMail className="text-[18px] text-red-700" />
           <span className="lg:text-[16px] md:text-[18px] text-[14px]">

@@ -36,13 +36,13 @@ export default function Hero() {
           <h2 className="text-textThird text-[16px] md:text-[24px] lg:text-[30px] font-rubik tracking-[2px] mb-6 font-semibold">
             I am a Frontend Developer 💻
           </h2>
-          <p className="text-transparent bg-clip-text bg-gradient-to-r from-textPrimary to-blue-500 text-[12px] md:text-[16px] lg:text-[20px] font-rubik tracking-[1px] leading-[26px] lg:px-20 md:px-10 px-2 italic">
+          <p className="text-transparent bg-clip-text bg-gradient-to-r from-textPrimary to-blue-500 text-[12px] md:text-[16px] lg:text-[20px] font-mono tracking-[1px] leading-[26px] lg:px-20 md:px-10 px-2 italic">
             I have 1 year of experience working as a web and mobile developer. I
             like to make applications using technologies such as React js and
             React Native.
           </p>
           <section className="flex justify-center space-x-8 mt-20">
-            <div className="bg-black shadow-xl rounded-full w-[40px] h-[40px] md:w-[45px] md:h-[45px] lg:w-[50px] lg:h-[50px] flex justify-center items-center">
+            <div className="bg-black shadow-xl rounded-full w-[40px] h-[40px] md:w-[45px] md:h-[45px] lg:w-[50px] lg:h-[50px] flex justify-center items-center hover:opacity-75">
               <a
                 href="https://www.linkedin.com/in/marcelo-dominguez-351570194/"
                 rel="noreferrer"
@@ -51,7 +51,7 @@ export default function Hero() {
                 <BsLinkedin className="text-1xl md:text-2xl lg:text-2xl text-blue-500" />
               </a>
             </div>
-            <div className="bg-black shadow-xl rounded-full w-[40px] h-[40px] md:w-[45px] md:h-[45px] lg:w-[50px] lg:h-[50px] flex justify-center items-center">
+            <div className="bg-black shadow-xl rounded-full w-[40px] h-[40px] md:w-[45px] md:h-[45px] lg:w-[50px] lg:h-[50px] flex justify-center items-center hover:opacity-75">
               <a
                 href="https://twitter.com/MarceeDominguez"
                 rel="noreferrer"
@@ -60,7 +60,7 @@ export default function Hero() {
                 <BsTwitter className="text-1xl md:text-2xl lg:text-2xl text-sky-500" />
               </a>
             </div>
-            <div className="bg-black shadow-xl rounded-full w-[40px] h-[40px] md:w-[45px] md:h-[45px] lg:w-[50px] lg:h-[50px] flex justify-center items-center">
+            <div className="bg-black shadow-xl rounded-full w-[40px] h-[40px] md:w-[45px] md:h-[45px] lg:w-[50px] lg:h-[50px] flex justify-center items-center hover:opacity-75">
               <a
                 href="https://github.com/MarceeloDominguez"
                 rel="noreferrer"
@@ -80,7 +80,7 @@ export default function Hero() {
             duration={500}
             className="transition-all duration-300"
           >
-            <BsArrowDownCircle className="lg:text-5xl md:text-3xl text-2xl text-primary cursor-pointer animate-bounce" />
+            <BsArrowDownCircle className="lg:text-5xl md:text-3xl text-2xl text-primary cursor-pointer animate-bounce hover:opacity-75" />
           </Link>
         </section>
       </div>
