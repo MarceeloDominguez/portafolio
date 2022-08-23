@@ -5,7 +5,7 @@ import { BsGithub } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <div className="h-24 bg-secondary">
+    <div className="h-24 bg-[#000000]">
       <div className="container mx-auto h-full flex justify-center items-center space-x-8">
         <div className="hover:opacity-75">
           <a

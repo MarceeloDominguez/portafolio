@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <header
       className={`${
-        bgColor ? "h-24 bg-secondary" : "h-24"
+        bgColor ? "h-24 bg-[#000000]" : "h-24"
       } flex fixed top-0 w-full transition-all duration-500 z-20`}
     >
       <div className="flex justify-between w-full container mx-auto items-center lg:px-16 md:px-5 px-3">

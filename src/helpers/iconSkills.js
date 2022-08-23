@@ -10,6 +10,8 @@ import git from "../img/git.png";
 import typescript from "../img/typescript.png";
 import firebase from "../img/firebase.png";
 import ecommerce from "../img/ecommerce.png";
+import crud from "../img/crud.png";
+import expense from "../img/expense.png";
 
 export const skills = [
   {
@@ -79,18 +81,21 @@ export const projects = [
     technologies: "Next js - Tailwind",
   },
   {
-    name: "proyecto 2",
-    img: ecommerce,
-    description: "Lorem Ipsum is simply dummy text of the printing",
+    name: "CRUD",
+    img: crud,
+    description: "You can add, edit, delete and mark if the task is complete",
     color: "bg-orange-400",
-    technologies:
-      "React js - Typescript - Tailwind React js - Typescript - Tailwind",
+    link: "https://add-task-v.vercel.app/",
+    repo: "https://github.com/MarceeloDominguez/add-task",
+    technologies: "Typescript - Context API",
   },
   {
-    name: "proyecto 3",
-    img: ecommerce,
-    description: "Lorem Ipsum is simply dummy text of the printing",
+    name: "expense control",
+    img: expense,
+    description: "Application where you can control income and expenses",
     color: "bg-purple-600",
+    repo: "https://github.com/MarceeloDominguez/expense_app",
+    technologies: "React Native - React Navigation - Node - MongoDB",
   },
   {
     name: "proyecto 1",

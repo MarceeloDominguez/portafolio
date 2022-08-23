@@ -20,7 +20,7 @@ export default function GridProjects() {
                 <img
                   src={item.img}
                   alt="imagen"
-                  className="object-contain h-48 w-96"
+                  className="object-contain lg:h-80 h-72 w-96"
                 />
               </div>
               <p className="font-mono text-lg font-bold max-h-20 h-20">
@@ -33,11 +33,13 @@ export default function GridProjects() {
                 </span>
               </h2>
               <div className="flex justify-around">
-                <a href={item.link} rel="noreferrer" target="_blank">
-                  <span className="font-rubik capitalize bg-red-500 hover:opacity-75 flex items-center px-2 py-1 rounded-md cursor-pointer shadow-lg shadow-red-500/50">
-                    demo <AiOutlineRocket className="ml-2" />
-                  </span>
-                </a>
+                {item.link && (
+                  <a href={item.link} rel="noreferrer" target="_blank">
+                    <span className="font-rubik capitalize bg-red-500 hover:opacity-75 flex items-center px-2 py-1 rounded-md cursor-pointer shadow-lg shadow-red-500/50">
+                      demo <AiOutlineRocket className="ml-2" />
+                    </span>
+                  </a>
+                )}
                 <a href={item.repo} rel="noreferrer" target="_blank">
                   <span className="font-rubik capitalize bg-blue-500 hover:opacity-75 flex items-center px-2 py-1 rounded-md cursor-pointer shadow-lg shadow-blue-500/50">
                     repo <BsGithub className="ml-2" />
