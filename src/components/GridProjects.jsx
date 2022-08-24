@@ -5,7 +5,7 @@ import { projects } from "../helpers/iconSkills";
 
 export default function GridProjects() {
   return (
-    <div className="bg-primary xl:pt-5">
+    <div className="bg-primary xl:pt-5 h-fit">
       <div className="container mx-auto">
         <div className="h-fit grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 px-16 py-8">
           {projects.map((item, index) => (
@@ -20,7 +20,7 @@ export default function GridProjects() {
                 <img
                   src={item.img}
                   alt="imagen"
-                  className="object-contain lg:h-80 h-72 w-96"
+                  className="object-contain lg:h-80 md:h-72 h-48 w-96"
                 />
               </div>
               <p className="font-mono text-lg font-bold max-h-20 h-20">
@@ -35,13 +35,13 @@ export default function GridProjects() {
               <div className="flex justify-around">
                 {item.link && (
                   <a href={item.link} rel="noreferrer" target="_blank">
-                    <span className="font-rubik capitalize bg-red-500 hover:opacity-75 flex items-center px-2 py-1 rounded-md cursor-pointer shadow-lg shadow-red-500/50">
+                    <span className="font-mono font-bold capitalize bg-red-500 hover:opacity-75 flex items-center px-2 py-1 rounded-md cursor-pointer shadow-lg">
                       demo <AiOutlineRocket className="ml-2" />
                     </span>
                   </a>
                 )}
                 <a href={item.repo} rel="noreferrer" target="_blank">
-                  <span className="font-rubik capitalize bg-blue-500 hover:opacity-75 flex items-center px-2 py-1 rounded-md cursor-pointer shadow-lg shadow-blue-500/50">
+                  <span className="font-mono font-bold capitalize bg-blue-500 hover:opacity-75 flex items-center px-2 py-1 rounded-md cursor-pointer shadow-lg">
                     repo <BsGithub className="ml-2" />
                   </span>
                 </a>

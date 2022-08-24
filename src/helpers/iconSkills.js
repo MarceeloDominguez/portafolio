@@ -12,6 +12,7 @@ import firebase from "../img/firebase.png";
 import ecommerce from "../img/ecommerce.png";
 import crud from "../img/crud.png";
 import expense from "../img/expense.png";
+import meli from "../img/meli.png";
 
 export const skills = [
   {
@@ -87,7 +88,7 @@ export const projects = [
     color: "bg-orange-400",
     link: "https://add-task-v.vercel.app/",
     repo: "https://github.com/MarceeloDominguez/add-task",
-    technologies: "Typescript - Context API",
+    technologies: "Typescript - Tailwind",
   },
   {
     name: "expense control",
@@ -98,19 +99,13 @@ export const projects = [
     technologies: "React Native - React Navigation - Node - MongoDB",
   },
   {
-    name: "proyecto 1",
-    img: ecommerce,
-    description: "Lorem Ipsum is simply dummy text of the printing",
+    name: "meli challenge",
+    img: meli,
+    description:
+      "Clone of the meli page where you can see the details of each product",
     color: "bg-rose-800",
+    link: "https://me-li-challenge-sigma.vercel.app/DetailsScreen/9",
+    repo: "https://github.com/MarceeloDominguez/MeLi-Challenge",
+    technologies: "React - Chakra ui",
   },
-  // {
-  //   name: "proyecto 2",
-  //   img: ecommerce,
-  //   des: "Lorem Ipsum is simply dummy text of the printing andtypesetting",
-  // },
-  // {
-  //   name: "proyecto 3",
-  //   img: ecommerce,
-  //   des: "Lorem Ipsum is simply dummy text of the printing andtypesetting",
-  // },
 ];

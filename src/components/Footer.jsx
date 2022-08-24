@@ -18,20 +18,20 @@ export default function Footer() {
         </div>
         <div className="hover:opacity-75">
           <a
-            href="https://twitter.com/MarceeDominguez"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <BsTwitter className="text-1xl md:text-2xl lg:text-2xl text-sky-500" />
-          </a>
-        </div>
-        <div className="hover:opacity-75">
-          <a
             href="https://github.com/MarceeloDominguez"
             rel="noreferrer"
             target="_blank"
           >
             <BsGithub className="text-1xl md:text-2xl lg:text-2xl text-white" />
+          </a>
+        </div>
+        <div className="hover:opacity-75">
+          <a
+            href="https://twitter.com/MarceeDominguez"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <BsTwitter className="text-1xl md:text-2xl lg:text-2xl text-sky-500" />
           </a>
         </div>
       </div>

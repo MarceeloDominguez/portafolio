@@ -7,9 +7,9 @@ import GridProjects from "./GridProjects";
 export default function Projects() {
   return (
     <>
-      <div id="projects" className="h-fit bg-primary">
+      <div id="projects" className="h-fit bg-primary lg:pt-0 pt-52">
         <div className="xl:pt-24 container flex flex-col mx-auto w-full lg:px-16 p-3">
-          <h1 className="font-rubik font-bold capitalize text-textPrimary lg:text-[40px] md:text-[30px] text-[20px] tracking-[1px]">
+          <h1 className="font-rubik font-bold capitalize text-textPrimary lg:text-[40px] md:text-[30px] text-[20px] tracking-[1px] mt-12 lg:mt-0">
             Projects
           </h1>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 xl:gap-10 xl:mt-10">
@@ -42,7 +42,7 @@ export default function Projects() {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <span className="flex items-center justify-center rounded-lg cursor-pointer font-rubik shadow-lg bg-blue-500 shadow-blue-500/50 py-2 px-5 hover:opacity-75">
+                  <span className="flex items-center justify-center rounded-lg cursor-pointer font-mono font-bold shadow-lg bg-blue-500 py-2 px-5 hover:opacity-75">
                     Repo
                     <BsGithub className="ml-2" />
                   </span>
