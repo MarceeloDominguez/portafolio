@@ -4,8 +4,9 @@ import { AiOutlineRocket } from "react-icons/ai";
 import { projects } from "../helpers/iconSkills";
 
 export default function GridProjects() {
+  //${item.color}
   return (
-    <div className="bg-primary xl:pt-5 h-fit">
+    <div className="dark:bg-primary bg-slate-100 xl:pt-5 h-fit">
       <div className="container mx-auto">
         <div className="h-fit grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 px-16 py-8">
           {projects.map((item, index) => (

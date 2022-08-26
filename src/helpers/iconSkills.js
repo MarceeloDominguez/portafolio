@@ -93,7 +93,7 @@ export const projects = [
   {
     name: "expense control",
     img: expense,
-    description: "Application where you can control income and expenses",
+    description: "Application where you can control your income and expenses",
     color: "bg-purple-600",
     repo: "https://github.com/MarceeloDominguez/expense_app",
     technologies: "React Native - React Navigation - Node - MongoDB",

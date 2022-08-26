@@ -5,7 +5,7 @@ import { BsGithub } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <div className="h-24 bg-[#000000]">
+    <div className="h-24 dark:bg-[#000000] bg-slate-200">
       <div className="container mx-auto h-full flex justify-center items-center space-x-8">
         <div className="hover:opacity-75">
           <a
@@ -22,7 +22,7 @@ export default function Footer() {
             rel="noreferrer"
             target="_blank"
           >
-            <BsGithub className="text-1xl md:text-2xl lg:text-2xl text-white" />
+            <BsGithub className="text-1xl md:text-2xl lg:text-2xl dark:text-white" />
           </a>
         </div>
         <div className="hover:opacity-75">

@@ -4,17 +4,20 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import ContextTheme from "./contextTheme/contextTheme";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Hero />
-      <Skills />
-      <Projects />
-      <Footer />
-      <BackTopBtn />
-    </div>
+    <ContextTheme>
+      <div>
+        <Header />
+        <Hero />
+        <Skills />
+        <Projects />
+        <Footer />
+        <BackTopBtn />
+      </div>
+    </ContextTheme>
   );
 }
 

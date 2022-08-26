@@ -7,21 +7,24 @@ import GridProjects from "./GridProjects";
 export default function Projects() {
   return (
     <>
-      <div id="projects" className="h-fit bg-primary lg:pt-0 pt-52">
+      <div
+        id="projects"
+        className="h-fit dark:bg-primary bg-slate-100 lg:pt-0 pt-52"
+      >
         <div className="xl:pt-24 container flex flex-col mx-auto w-full lg:px-16 p-3">
           <h1 className="font-rubik font-bold capitalize text-textPrimary lg:text-[40px] md:text-[30px] text-[20px] tracking-[1px] mt-12 lg:mt-0">
             Projects
           </h1>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 xl:gap-10 xl:mt-10">
             <div>
-              <span className="font-rubik font-semibold text-third lg:text-[24px] md:text-[20px] text-[16px] mb-8 tracking-[1px]">
+              <span className="font-rubik font-semibold text-blue-400 dark:text-third lg:text-[24px] md:text-[20px] text-[16px] mb-8 tracking-[1px]">
                 Clone app Despegar
               </span>
-              <h3 className="font-mono text-[12px] xl:text-[18px] md:text-[18px] tracking-[1px] py-2 text-blue-400 ">
+              <h3 className="font-mono font-semibold text-[12px] xl:text-[18px] md:text-[18px] tracking-[1px] py-2 dark:text-blue-400 text-[#293855]">
                 This is a copy of the Despegar ui in which you can see a list of
                 cards and see the details of the accommodation cards.
               </h3>
-              <h2 className="font-rubik text-textThird tracking-[1px] py-2">
+              <h2 className="font-rubik dark:text-textThird tracking-[1px] py-2">
                 Technology: <span className="font-semibold">React Native</span>
               </h2>
               <div className="flex xl:flex-row md:flex-row flex-col items-center justify-center gap-3 py-4">

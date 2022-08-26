@@ -14,11 +14,11 @@ export default function Hero() {
   useEffect(() => {
     setAnimated(true);
   }, []);
-  //text-transparent bg-clip-text bg-gradient-to-r from-textPrimary to-blue-500
+
   return (
     <main
       id="home"
-      className="bg-primary min-h-screen relative flex justify-center items-center overflow-hidden"
+      className="dark:bg-primary bg-slate-100 min-h-screen relative flex justify-center items-center overflow-hidden"
     >
       <ShapeDivider />
       <div className="flex justify-center min-h-screen items-center z-10 flex-col">
@@ -27,16 +27,16 @@ export default function Hero() {
             animated ? "" : "translate-y-10 opacity-0"
           } transform transition duration-[2000ms] ease-in-out flex flex-col justify-center items-center max-w-4xl lg:max-w-7xl lg:px-16 text-center`}
         >
-          <h1 className="text-textThird text-[40px] md:text-[54px] lg:text-[58px] font-rubik tracking-[2px] mb-6">
+          <h1 className="dark:text-textThird text-[#293855] text-[40px] md:text-[54px] lg:text-[58px] font-rubik tracking-[2px] mb-6">
             Hi👋, my name is{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-textPrimary to-blue-500 font-bold">
+            <span className="text-textPrimary font-bold">
               Marcelo Domínguez
             </span>
           </h1>
-          <h2 className="text-textThird text-[16px] md:text-[24px] lg:text-[30px] font-rubik tracking-[2px] mb-6 font-semibold">
+          <h2 className="dark:text-textThird text-[16px] md:text-[24px] lg:text-[30px] font-rubik tracking-[2px] mb-6 font-semibold">
             I am a Frontend Developer 💻
           </h2>
-          <p className="max-w-[860px] text-blue-400 text-[12px] md:text-[16px] lg:text-[20px] font-mono tracking-[1px] leading-[26px] lg:px-20 md:px-10 px-2">
+          <p className="max-w-[860px] dark:text-blue-400 text-[#293855] text-[12px] md:text-[16px] lg:text-[20px] font-mono font-semibold tracking-[1px] leading-[26px] lg:px-20 md:px-10 px-2">
             I have 1 year of experience working as a web and mobile developer. I
             like to make applications using technologies such as React js and
             React Native.
