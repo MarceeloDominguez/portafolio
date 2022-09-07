@@ -20,20 +20,20 @@ export default function Header() {
   return (
     <header
       className={`${
-        bgColor ? "h-24 dark:bg-[#000000] bg-slate-200" : "h-24"
+        bgColor ? "md:h-24 h-12 dark:bg-[#000000] bg-slate-200" : "md:h-24 h-12"
       } flex fixed top-0 w-full transition-all duration-500 z-20`}
     >
       <div className="flex justify-between w-full container mx-auto items-center lg:px-16 md:px-5 px-3">
-        <h1
+        <span
           className={`${
             animated ? "" : "translate-y-10 opacity-0"
-          } transform transition duration-[2000ms] ease-in-out text-[26px] text-primary font-bold font-mono flex bg-third items-center space-x-2 p-2 rounded-tl-[15px] rounded-br-[15px]`}
+          } transform transition duration-[2000ms] ease-in-out flex bg-gradient-to-r from-[#576182] to-[#1fc5a8] shadow-lg items-center space-x-2 lg:px-2 p-1 rounded-full`}
         >
-          <MdOutgoingMail className="text-[18px] text-red-700" />
-          <span className="lg:text-[16px] md:text-[18px] text-[14px]">
+          <MdOutgoingMail className="lg:text-[18px] text-[13px] text-[#970d1a]" />
+          <h1 className="lg:text-[16px] text-[12px] text-primary font-bold font-mono">
             marceelodominguez@gmail.com
-          </span>
-        </h1>
+          </h1>
+        </span>
         <div className="lg:block hidden">
           <Nav animated={animated} />
         </div>

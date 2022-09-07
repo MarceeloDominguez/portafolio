@@ -19,7 +19,7 @@ export default function BackTopBtn() {
     show && (
       <button
         onClick={() => scrollToTop()}
-        className="bg-textPrimary hover:bg-textSecondary opacity-0 lg:opacity-100 text-white w-12 h-12 rounded-full fixed right-24 bottom-28 cursor-pointer flex justify-center items-center transition-all"
+        className="bg-textPrimary hover:bg-textSecondary opacity-0 lg:opacity-100 text-white w-12 h-12 rounded-full fixed right-4 xl:right-24 bottom-28 cursor-pointer flex justify-center items-center transition-all shadow-lg"
       >
         <BsChevronUp className="w-6 h-6 text-primary" />
       </button>

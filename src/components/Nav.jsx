@@ -39,7 +39,7 @@ export default function Nav({ animated }) {
           } transform transition duration-[2000ms]`}
         >
           {theme === "dark" ? (
-            <FiSun className="text-yellow-400" />
+            <FiSun className="text-slate-200" />
           ) : (
             <BsMoonStars />
           )}

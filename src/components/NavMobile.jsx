@@ -49,7 +49,7 @@ export default function NavMobile({ animated }) {
           className="mr-4 lg:text-2xl md:text-2xl text-md"
         >
           {theme === "dark" ? (
-            <FiSun className="text-yellow-400" />
+            <FiSun className="text-slate-200" />
           ) : (
             <BsMoonStars />
           )}

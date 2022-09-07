@@ -13,6 +13,7 @@ import ecommerce from "../img/ecommerce.png";
 import crud from "../img/crud.png";
 import expense from "../img/expense.png";
 import meli from "../img/meli.png";
+import forecast from "../img/forecast.png";
 
 export const skills = [
   {
@@ -78,34 +79,42 @@ export const projects = [
     description: "List of products where you can add and remove from the cart",
     link: "https://ecommercenextjs-r9p5jo704-marceelodominguez.vercel.app/",
     repo: "https://github.com/MarceeloDominguez/ecommerce-nextjs",
-    color: "bg-blue-200",
-    technologies: "Next js - Tailwind",
+    technologies: [{ name: "Next js" }, { name: "Tailwind" }],
   },
   {
     name: "CRUD",
     img: crud,
     description: "You can add, edit, delete and mark if the task is complete",
-    color: "bg-orange-400",
     link: "https://add-task-v.vercel.app/",
     repo: "https://github.com/MarceeloDominguez/add-task",
-    technologies: "Typescript - Tailwind",
-  },
-  {
-    name: "expense control",
-    img: expense,
-    description: "Application where you can control your income and expenses",
-    color: "bg-purple-600",
-    repo: "https://github.com/MarceeloDominguez/expense_app",
-    technologies: "React Native - React Navigation - Node - MongoDB",
+    technologies: [{ name: "Typescript" }, { name: "Tailwind" }],
   },
   {
     name: "meli challenge",
     img: meli,
     description:
       "Clone of the meli page where you can see the details of each product",
-    color: "bg-rose-800",
     link: "https://me-li-challenge-sigma.vercel.app/DetailsScreen/9",
     repo: "https://github.com/MarceeloDominguez/MeLi-Challenge",
-    technologies: "React - Chakra ui",
+    technologies: [{ name: "React" }, { name: "Chakra ui" }],
+  },
+  {
+    name: "forecast",
+    img: forecast,
+    description: "Finder of the current and extended forecast of your city",
+    link: "https://forecast-6adr3g2kx-marceelodominguez.vercel.app/",
+    repo: "https://github.com/MarceeloDominguez/forecast",
+    technologies: [{ name: "React" }, { name: "Tailwind" }],
+  },
+  {
+    name: "expense control",
+    img: expense,
+    description: "Application where you can control your income and expenses",
+    repo: "https://github.com/MarceeloDominguez/expense_app",
+    technologies: [
+      { name: "React Native" },
+      { name: "Node" },
+      { name: "MongoDB" },
+    ],
   },
 ];

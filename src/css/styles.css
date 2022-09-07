@@ -15,5 +15,28 @@
 }
 
 .custom .shape-fill {
-  fill: #45a29e;
+  fill: #1c2e4c;
+}
+
+/* style screen skills */
+
+.custom-shape-skills {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-skills svg {
+  position: relative;
+  display: block;
+  width: calc(161% + 1.3px);
+  height: 394px;
+}
+
+.custom-shape-skills .shape-fill {
+  fill: #1c2e4c;
 }

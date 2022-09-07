@@ -18,30 +18,30 @@ export default function Hero() {
   return (
     <main
       id="home"
-      className="dark:bg-primary bg-slate-100 min-h-screen relative flex justify-center items-center overflow-hidden"
+      className="dark:bg-primary bg-slate-100 h-screen relative flex justify-center items-center overflow-hidden"
     >
       <ShapeDivider />
-      <div className="flex justify-center min-h-screen items-center z-10 flex-col">
+      <div className="flex justify-center items-center z-10 flex-col">
         <div
           className={`${
             animated ? "" : "translate-y-10 opacity-0"
-          } transform transition duration-[2000ms] ease-in-out flex flex-col justify-center items-center max-w-4xl lg:max-w-7xl lg:px-16 text-center`}
+          } transform transition duration-[2000ms] ease-in-out w-3/4 flex flex-col lg:px-16 text-center items-center`}
         >
-          <h1 className="dark:text-textThird text-[#293855] text-[40px] md:text-[54px] lg:text-[58px] font-rubik tracking-[2px] mb-6">
+          <h1 className="dark:text-textThird text-[#293855] text-[22px] md:text-[54px] lg:text-[58px] font-rubik tracking-[2px] mb-6">
             Hi👋, my name is{" "}
             <span className="text-textPrimary font-bold">
               Marcelo Domínguez
             </span>
           </h1>
-          <h2 className="dark:text-textThird text-[16px] md:text-[24px] lg:text-[30px] font-rubik tracking-[2px] mb-6 font-semibold">
+          <h2 className="dark:text-textThird text-[14px] md:text-[24px] lg:text-[30px] font-rubik tracking-[2px] mb-6 font-semibold">
             I am a Frontend Developer 💻
           </h2>
-          <p className="max-w-[860px] dark:text-blue-400 text-[#293855] text-[12px] md:text-[16px] lg:text-[20px] font-mono font-semibold tracking-[1px] leading-[26px] lg:px-20 md:px-10 px-2">
+          <p className="dark:text-blue-400 text-blue-600 text-[12px] md:text-[16px] lg:text-[20px] font-rubik tracking-[1px] leading-[26px] xl:w-4/6 md:px-10 px-2">
             I have 1 year of experience working as a web and mobile developer. I
             like to make applications using technologies such as React js and
             React Native.
           </p>
-          <section className="flex justify-center space-x-8 mt-20">
+          <section className="flex justify-center space-x-8 mt-10">
             <div className="bg-black shadow-xl rounded-full w-[40px] h-[40px] md:w-[45px] md:h-[45px] lg:w-[50px] lg:h-[50px] flex justify-center items-center hover:opacity-75">
               <a
                 href="https://www.linkedin.com/in/marcelo-dominguez-351570194/"
@@ -71,7 +71,7 @@ export default function Hero() {
             </div>
           </section>
         </div>
-        <section className="absolute bottom-24">
+        <section className="absolute bottom-12">
           <Link
             to={navigation.href}
             activeClass="active"
@@ -80,7 +80,7 @@ export default function Hero() {
             duration={500}
             className="transition-all duration-300"
           >
-            <BsArrowDownCircle className="lg:text-5xl md:text-3xl text-2xl text-primary cursor-pointer animate-bounce hover:opacity-75" />
+            <BsArrowDownCircle className="lg:text-5xl md:text-3xl text-2xl text-textPrimary cursor-pointer animate-bounce hover:opacity-75" />
           </Link>
         </section>
       </div>
