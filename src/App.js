@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import ContextTheme from "./contextTheme/contextTheme";
+import "./css/styles.css";
 
 function App() {
   return (

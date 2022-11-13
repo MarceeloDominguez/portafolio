@@ -27,10 +27,10 @@ export default function Header() {
         <span
           className={`${
             animated ? "" : "translate-y-10 opacity-0"
-          } transform transition duration-[2000ms] ease-in-out flex bg-gradient-to-r from-[#576182] to-[#1fc5a8] shadow-lg items-center space-x-2 lg:px-2 p-1 rounded-full`}
+          } transform transition duration-[2000ms] ease-in-out flex bg-[#45a29e] items-center space-x-2 lg:px-2 p-1 rounded-[6px]`}
         >
-          <MdOutgoingMail className="lg:text-[18px] text-[13px] text-[#970d1a]" />
-          <h1 className="lg:text-[16px] text-[12px] text-primary font-bold font-mono">
+          <MdOutgoingMail className="lg:text-[18px] text-[13px] text-slate-50" />
+          <h1 className="lg:text-[16px] text-[12px] text-slate-50 font-rubik">
             marceelodominguez@gmail.com
           </h1>
         </span>

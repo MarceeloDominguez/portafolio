@@ -10,19 +10,23 @@ export default function Skills() {
     >
       <ShapeDividerSkills />
       <div className="container mx-auto w-full lg:h-screen lg:px-16 flex flex-col justify-center md:p-4 lg:p-0 p-3">
-        <h1 className="font-rubik font-bold capitalize text-textPrimary lg:text-[40px] md:text-[30px] text-[20px] tracking-[1px] z-10">
-          About
+        <h1 className="font-rubik font-bold capitalize text-textPrimary lg:text-[40px] md:text-[30px] text-[20px] tracking-[1px] z-10 lg:pt-6 md:pt-24 pt-10">
+          ¿Quién soy?
         </h1>
-        <p className="font-rubik dark:text-third text-blue-400 lg:text-[20px] md:text-[16px] text-[12px] mb-8 tracking-[1px] z-10">
-          I am a Frontend Developer at constant learning of new technologies. My
-          goal is to become a better developer every day, constantly improving
-          my code and my knowledge.
+        <p className="font-rubik dark:text-third text-blue-400 lg:text-[20px] md:text-[14px] text-[12px] mb-2 tracking-[1px] z-10 xl:w-2/4 lg:w-3/4">
+          Soy un desarrollador Frontend en constante aprendizaje de nuevas
+          tecnologías. Tanto en el Frontend como en el Backend. Mi objetivo es
+          convertirme en un mejor desarrollador cada día, mejorando
+          constantemente mi código y mi conocimiento.
+        </p>
+        <p className="font-rubik dark:text-third text-blue-400 lg:text-[20px] md:text-[16px] text-[12px] mb-4 tracking-[1px] z-10 xl:w-2/4 lg:w-3/4">
+          Me considero una persona ordenada, apasionada y compañero.
         </p>
         <h2 className="font-rubik font-bold capitalize lg:mt-2 text-textPrimary lg:text-[40px] md:text-[30px] text-[20px] md:pt-3 tracking-[1px] z-10">
-          Skills
+          Tecnologías
         </h2>
         <p className="font-rubik dark:text-third text-blue-400 lg:text-[20px] md:text-[16px] text-[12px] mb-8 tracking-[1px] z-10">
-          These are the technologies I have worked with:
+          Estas son las tecnologías con las que he trabajado:
         </p>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 lg:gap-8 md:gap-4 gap-2">
           {skills.map((item, index) => (

@@ -14,6 +14,9 @@ import crud from "../img/crud.png";
 import expense from "../img/expense.png";
 import meli from "../img/meli.png";
 import forecast from "../img/forecast.png";
+import crudnode from "../img/crud-node.png";
+import meliapp from "../img/meli-app.png";
+import youtube from "../img/youtube.png";
 
 export const skills = [
   {
@@ -67,54 +70,96 @@ export const skills = [
 ];
 
 export const navigation = [
-  { name: "home", href: "home" },
-  { name: "skills", href: "skills" },
-  { name: "projects", href: "projects" },
+  { name: "inicio", href: "home" },
+  { name: "sobre mí", href: "skills" },
+  { name: "proyectos", href: "projects" },
 ];
 
 export const projects = [
   {
-    name: "shopping cart",
+    name: "Meli App",
+    img: meliapp,
+    description:
+      "Clon de la app de Mercado Libre donde se puede ver el detalle de cada producto",
+    repo: "https://github.com/MarceeloDominguez/mercado-libre-app",
+    technologies: [{ name: "React Native" }, { name: "React Navigation" }],
+    sizeimage: true,
+  },
+  {
+    name: "YouTube App",
+    img: youtube,
+    description:
+      "Clon de la app de Youtube en donde se pueden buscar los videos por categorías",
+    repo: "https://github.com/MarceeloDominguez/youtube-react-native",
+    technologies: [{ name: "React Native" }, { name: "React Navigation" }],
+    sizeimage: true,
+  },
+  {
+    name: "Control de gastos",
+    img: expense,
+    description: "Aplicación donde puedes controlar tus ingresos y gastos",
+    repo: "https://github.com/MarceeloDominguez/expense_app",
+    technologies: [
+      { name: "React Native" },
+      { name: "Node" },
+      { name: "Express" },
+      { name: "MongoDB" },
+      { name: "React Navigation" },
+    ],
+    sizeimage: true,
+  },
+  {
+    name: "Lista de tareas",
+    img: crudnode,
+    description:
+      "Puedes agregar, editar, eliminar y marcar si la tarea está completa",
+    repo: "https://github.com/MarceeloDominguez/ReactNative_Node.js",
+    technologies: [
+      { name: "React Native" },
+      { name: "Node" },
+      { name: "Express" },
+      { name: "MongoDB" },
+      { name: "React Navigation" },
+    ],
+    sizeimage: true,
+  },
+  {
+    name: "Carrito de compras",
     img: ecommerce,
-    description: "List of products where you can add and remove from the cart",
+    description: "Lista de productos donde puedes agregar y quitar del carrito",
     link: "https://ecommercenextjs-r9p5jo704-marceelodominguez.vercel.app/",
     repo: "https://github.com/MarceeloDominguez/ecommerce-nextjs",
-    technologies: [{ name: "Next js" }, { name: "Tailwind" }],
+    technologies: [{ name: "next js" }, { name: "tailwind" }],
   },
   {
-    name: "CRUD",
-    img: crud,
-    description: "You can add, edit, delete and mark if the task is complete",
-    link: "https://add-task-v.vercel.app/",
-    repo: "https://github.com/MarceeloDominguez/add-task",
-    technologies: [{ name: "Typescript" }, { name: "Tailwind" }],
-  },
-  {
-    name: "meli challenge",
+    name: "Mercado Libre",
     img: meli,
     description:
-      "Clone of the meli page where you can see the details of each product",
+      "Clon de la página de Mercado Libre donde se puede ver el detalle de cada producto",
     link: "https://me-li-challenge-sigma.vercel.app/DetailsScreen/9",
     repo: "https://github.com/MarceeloDominguez/MeLi-Challenge",
-    technologies: [{ name: "React" }, { name: "Chakra ui" }],
+    technologies: [{ name: "React" }, { name: "Chakra UI" }],
   },
   {
-    name: "forecast",
+    name: "Pronostico",
     img: forecast,
-    description: "Finder of the current and extended forecast of your city",
+    description:
+      "Pueden encontrar el clima actual y de los próximos días de tu ciudad",
     link: "https://forecast-6adr3g2kx-marceelodominguez.vercel.app/",
     repo: "https://github.com/MarceeloDominguez/forecast",
     technologies: [{ name: "React" }, { name: "Tailwind" }],
   },
   {
-    name: "expense control",
-    img: expense,
-    description: "Application where you can control your income and expenses",
-    repo: "https://github.com/MarceeloDominguez/expense_app",
+    name: "Lista de tareas",
+    img: crud,
+    description:
+      "Puedes agregar, editar, eliminar y marcar si la tarea está completa",
+    link: "https://add-task-v.vercel.app/",
+    repo: "https://github.com/MarceeloDominguez/add-task",
     technologies: [
-      { name: "React Native" },
-      { name: "Node" },
-      { name: "MongoDB" },
+      { name: "react" },
+      { name: "Typescript" },
+      { name: "Tailwind" },
     ],
   },
 ];

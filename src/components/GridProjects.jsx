@@ -5,47 +5,49 @@ import { projects } from "../helpers/iconSkills";
 
 export default function GridProjects() {
   return (
-    <div className="dark:bg-primary bg-slate-100">
+    <div className="dark:bg-primary lg:pt-24 bg-slate-100" id="gridProyect">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 px-5 lg:px-16 xl:px-16 py-4">
           {projects.map((item, index) => (
             <div
               key={index}
-              className="bg-gradient-to-r from-[#576182] to-[#1fc5a8] h-full flex flex-col p-3 rounded-xl shadow-lg"
+              className="dark:bg-[#000000] bg-[#fff] h-full flex flex-col p-3 rounded-[8px] shadow-lg"
             >
-              <span className="text-center font-rubik font-bold capitalize lg:text-xl text-lg tracking-[1px] text-[#1c2e4c]">
-                {item.name}
-              </span>
-              <div className="flex items-center justify-center">
+              <div>
                 <img
                   src={item.img}
                   alt="imagen"
-                  className="object-contain lg:h-80 md:h-72 h-48 w-96"
+                  className={`w-full h-80 ${
+                    item.sizeimage && "object-contain"
+                  }`}
                 />
               </div>
-              <p className="font-rubik lg:text-lg text-sm tracking-[1px] my-4">
+              <span className="text-center font-rubik font-bold capitalize lg:text-[20px] text-lg tracking-[1px] text-[#45a29e] mt-2">
+                {item.name}
+              </span>
+              <p className="font-rubik lg:text-[15px] text-sm tracking-[1px] my-4 dark:text-slate-300 text-center">
                 {item.description}
               </p>
-              <div className="flex flex-wrap items-end my-4 h-1/6 pb-3">
+              <div className="flex flex-wrap items-end justify-center my-4 h-1/6 pb-3">
                 {item.technologies.map((item, index) => (
                   <span
                     key={index}
-                    className="mr-2 shadow-md px-2 my-1 rounded-full tracking-[1px] lg:text-sm text-xs font-mono font-bold bg-gradient-to-r from-[#ff9c60] to-[#ffd6b8]"
+                    className="mr-2 shadow-md px-2 my-1 py-1 rounded-[6px] capitalize tracking-[1px] lg:text-[13px] text-[12px] font-rubik font-bold border-2 border-[#45a29e] dark:text-slate-300"
                   >
                     {item.name}
                   </span>
                 ))}
               </div>
-              <div className="flex justify-around">
+              <div className="flex justify-around mb-2">
                 {item.link && (
                   <a href={item.link} rel="noreferrer" target="_blank">
-                    <span className="font-mono font-bold capitalize bg-[#970d1a] text-white hover:bg-[#4e204d] flex items-center px-2 py-1 rounded-md cursor-pointer shadow-lg">
+                    <span className="font-mono font-bold capitalize bg-red-900 text-white hover:bg-red-700 flex items-center px-2 py-1 rounded-[6px] cursor-pointer shadow-lg">
                       demo <AiOutlineRocket className="ml-2" />
                     </span>
                   </a>
                 )}
                 <a href={item.repo} rel="noreferrer" target="_blank">
-                  <span className="font-mono font-bold capitalize bg-[#72b2e4] hover:bg-[#92e1e2] flex items-center px-2 py-1 rounded-md cursor-pointer shadow-lg">
+                  <span className="font-mono font-bold capitalize bg-blue-400 hover:bg-blue-300 flex items-center px-2 py-1 rounded-[6px] cursor-pointer shadow-lg">
                     repo <BsGithub className="ml-2" />
                   </span>
                 </a>
