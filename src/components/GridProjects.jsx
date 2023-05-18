@@ -11,15 +11,20 @@ export default function GridProjects() {
           {projects.map((item, index) => (
             <div
               key={index}
-              className="dark:bg-[#000000] bg-[#fff] h-full flex flex-col p-3 rounded-[8px] shadow-lg"
+              className="dark:bg-[#000000] bg-[#fff] h-full flex flex-col p-3 rounded-[8px] shadow-lg group"
             >
-              <div>
-                <img
+              <div className="overflow-hidden">
+                {/* <img
                   src={item.img}
                   alt="imagen"
                   className={`w-full h-80 ${
                     item.sizeimage && "object-contain"
                   }`}
+                /> */}
+                <img
+                  src={item.img}
+                  alt="imagen"
+                  className="w-full h-96 object-contain group-hover:scale-110 transition-all duration-300"
                 />
               </div>
               <span className="text-center font-rubik font-bold capitalize lg:text-[20px] text-lg tracking-[1px] text-[#45a29e] mt-2">

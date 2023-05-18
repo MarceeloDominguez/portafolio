@@ -10,18 +10,18 @@ export default function Skills() {
     >
       <ShapeDividerSkills />
       <div className="container mx-auto w-full lg:h-screen lg:px-16 flex flex-col justify-center md:p-4 lg:p-0 p-3">
-        <h1 className="font-rubik font-bold capitalize text-textPrimary lg:text-[40px] md:text-[30px] text-[20px] tracking-[1px] z-10 lg:pt-6 md:pt-24 pt-10">
+        <h1 className="font-rubik font-bold capitalize text-textPrimary lg:text-[40px] md:text-[30px] text-[20px] tracking-[1px] z-10 lg:pt-6 md:pt-20 pt-10">
           ¿Quién soy?
         </h1>
         <p className="font-rubik dark:text-third text-blue-400 lg:text-[20px] md:text-[14px] text-[12px] mb-2 tracking-[1px] z-10 xl:w-2/4 lg:w-3/4">
           Soy un desarrollador Frontend en constante aprendizaje de nuevas
-          tecnologías. Tanto en el Frontend como en el Backend. Mi objetivo es
+          tecnologías, tanto en el Frontend como en el Backend. Mi objetivo es
           convertirme en un mejor desarrollador cada día, mejorando
           constantemente mi código y mi conocimiento.
         </p>
-        <p className="font-rubik dark:text-third text-blue-400 lg:text-[20px] md:text-[16px] text-[12px] mb-4 tracking-[1px] z-10 xl:w-2/4 lg:w-3/4">
+        {/* <p className="font-rubik dark:text-third text-blue-400 lg:text-[20px] md:text-[16px] text-[12px] mb-4 tracking-[1px] z-10 xl:w-2/4 lg:w-3/4">
           Me considero una persona ordenada, apasionada y compañero.
-        </p>
+        </p> */}
         <h2 className="font-rubik font-bold capitalize lg:mt-2 text-textPrimary lg:text-[40px] md:text-[30px] text-[20px] md:pt-3 tracking-[1px] z-10">
           Tecnologías
         </h2>
@@ -37,7 +37,7 @@ export default function Skills() {
               <img
                 src={item.img}
                 alt="logo"
-                className="xl:w-28 lg:w-12 md:w-20 w-10"
+                className="xl:w-28 lg:w-12 md:w-20 w-9"
               />
               <span className="capitalize font-rubik dark:text-textThird text-[#293855] text-[12px] md:text-[18px] lg:text-[14px] xl:text-[20px] pt-2">
                 {item.name}
